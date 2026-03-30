@@ -371,7 +371,9 @@ def vit_small(num_classes=10, **kwargs):
     return VisionTransformer(embed_dim=384, depth=12, num_heads=12,
                              mlp_ratio=4.0, num_classes=num_classes, **kwargs)
 
-
+def vit_medium(num_classes=10, **kwargs):
+    return VisionTransformer(embed_dim=576, depth = 14, num_heads=12,
+                             mlp_ratio= 8.0, num_classes=num_classes, **kwargs)
 # ---------------------------------------------------------------------------
 # Smoke test
 # ---------------------------------------------------------------------------
