@@ -1,0 +1,75 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            94i4jk6y02qvkdfvu1az8zx76judn3d7:
+                codePath: experiments.py
+                codePathLocal: experiments.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "501809635328"
+                        used: "360564080640"
+                email: sayednumair2019@gmail.com
+                executable: /home/numair/miniconda3/envs/beta_splatting/bin/python
+                git:
+                    commit: 235819e5bafa09670357d08df22d7c25a9ce4a2a
+                    remote: https://github.com/NumairSayed/ViT-vs-ConvNets.git
+                gpu: NVIDIA GeForce RTX 4050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 2560
+                      memoryTotal: "6439305216"
+                      name: NVIDIA GeForce RTX 4050 Laptop GPU
+                      uuid: GPU-d4891430-f4d1-ed0d-9f36-1a536d4f7766
+                host: numair-LOQ-15ARP9
+                memory:
+                    total: "24863764480"
+                os: Linux-6.17.0-20-generic-x86_64-with-glibc2.39
+                program: /home/numair/Desktop/IISc/Assignments/DLCV/Assignment2/experiments.py
+                python: CPython 3.10.20
+                root: /home/numair/Desktop/IISc/Assignments/DLCV/Assignment2
+                startedAt: "2026-04-10T03:15:54.823881Z"
+                writerId: 94i4jk6y02qvkdfvu1az8zx76judn3d7
+        m: []
+        python_version: 3.10.20
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 61
+            "4": 3.10.20
+            "5": 0.25.1
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": linux-x86_64
+batch_size:
+    value: 512
+data_fraction:
+    value: 0.05
+epochs:
+    value: 100
+grad_clip:
+    value: 0
+label_smoothing:
+    value: 0
+lr:
+    value: 0.1
+model:
+    value: resnet18
+warmup_epochs:
+    value: 3
+weight_decay:
+    value: 0.0005
