@@ -1,8 +1,5 @@
-DLCV 2026 — Assignment 2: Vision Transformer on CIFAR-10
-=========================================================
 
 ORGANIZATION
-------------
 main.py                  — Entry point; runs any/all experiments
 exp1_data_efficiency.py  — Exp 1: ViT vs CNN data efficiency
 exp2_patch_size.py       — Exp 2: Effect of patch size
@@ -22,7 +19,6 @@ saved_models/            — Auto-created; best checkpoints saved here
 
 
 HOW TO RUN
-----------
 Run ALL 7 experiments sequentially:
     python main.py
 
@@ -40,7 +36,6 @@ Run a single experiment file directly:
 
 
 NOTES ON EXPERIMENT DEPENDENCIES
----------------------------------
 - Exp 5 (attention) uses exp4_learnable.pt if present, otherwise trains fresh.
 - Exp 7 (linear probe) uses exp4_learnable.pt → exp3_cls.pt → exp2_patch4.pt
   (in priority order) if present; otherwise trains a backbone from scratch.
@@ -49,7 +44,6 @@ NOTES ON EXPERIMENT DEPENDENCIES
 
 
 OUTPUTS
--------
 After each experiment, results are written to results/exp{N}_<name>/:
   results.json    — Numerical results (accuracies, times, etc.)
   loss_curves.png — Training/validation loss and accuracy curves
@@ -62,7 +56,7 @@ A cross-experiment summary is written to results/summary.json.
 
 
 HARDWARE
---------
+
 A CUDA-capable GPU is strongly recommended.
 On CPU, reduce `epochs` in the VIT_CFG / CNN_CFG dicts inside each file.
 Mixed-precision (AMP) is used automatically when CUDA is available.
