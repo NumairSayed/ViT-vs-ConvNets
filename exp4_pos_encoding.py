@@ -1,13 +1,3 @@
-"""
-exp4_pos_encoding.py — Experiment 4: Positional Encoding Ablation
-==================================================================
-Objective : Understand the importance of positional information in ViTs.
-Task      : Train three variants:
-              (a) Learnable positional embeddings
-              (b) Sinusoidal positional embeddings
-              (c) No positional encoding
-Metrics   : Test accuracy, Training stability (loss curves).
-"""
 
 import json
 from pathlib import Path

@@ -1,13 +1,3 @@
-"""
-main.py — DLCV 2026 Assignment 2: Run all experiments
-=======================================================
-Usage:
-    python main.py              # run all 7 experiments
-    python main.py --exp 1 3 5  # run specific experiments
-
-Results are saved under results/exp{N}_*/  and  saved_models/
-"""
-
 import argparse
 import json
 import time
@@ -28,7 +18,6 @@ print(f"  Device : {DEVICE}" +
 print(f"{'='*60}\n")
 
 #  Experiment registry ─
-# Import lazily so individual modules can also be run standalone
 def _get_experiments():
     from exp1_data_efficiency import run as run1
     from exp2_patch_size       import run as run2

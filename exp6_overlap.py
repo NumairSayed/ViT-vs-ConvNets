@@ -1,12 +1,3 @@
-"""
-exp6_overlap.py — Experiment 6: Overlapping vs Non-overlapping Patches
-=======================================================================
-Objective : Evaluate the effect of overlapping patches on performance.
-Task      : Train two (or more) models:
-              (a) Non-overlapping patches — stride = patch_size
-              (b) Overlapping patches    — stride < patch_size
-Metrics   : Test accuracy, Training time, GPU memory usage.
-"""
 
 import json
 import time

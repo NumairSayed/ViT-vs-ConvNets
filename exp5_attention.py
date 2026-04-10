@@ -1,16 +1,3 @@
-"""
-exp5_attention.py — Experiment 5: Attention Map and Entropy Analysis
-=====================================================================
-Objective : Analyze attention behavior across layers.
-Task      :
-  (a) Visualize attention maps for different layers of the trained model.
-  (b) Compute attention entropy per head: H = -Σ p·log(p)
-Metrics   : Entropy per layer, entropy per attention head.
-Plot      : Entropy vs layer depth.
-
-Prerequisite: Requires a trained ViT checkpoint (uses exp4_learnable.pt if
-              available, otherwise trains from scratch).
-"""
 
 import json
 from pathlib import Path

@@ -1,15 +1,3 @@
-"""
-exp7_linear_probe.py — Experiment 7: Layer-wise Representation Quality
-========================================================================
-Objective : Understand how feature representations evolve across layers.
-Task      :
-  (a) Extract CLS token (or pooled) features from each transformer layer.
-  (b) Train a linear classifier on features from each layer separately.
-Metrics   : Classification accuracy per layer.
-Plot      : Layer index vs accuracy.
-
-Prerequisite: Uses exp4_learnable.pt if available, otherwise trains from scratch.
-"""
 
 import json
 from pathlib import Path
